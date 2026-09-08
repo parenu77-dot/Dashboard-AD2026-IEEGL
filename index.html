@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Dashboard Programas · Instituto de Emprendimiento · AD2026</title>
+<title>Dashboard Programas Activos · Instituto de Emprendimiento · AD2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -154,6 +154,12 @@ body{font-family:'Google Sans','Roboto',Arial,sans-serif;background:var(--bg);co
 <body>
 
 <!-- HEADER -->
+<!-- BANNER PROGRAMAS ACTIVOS -->
+<div style="background:#1B2A5E;padding:8px 20px;text-align:center;border-bottom:2px solid #1DF38C">
+  <span style="color:#1DF38C;font-family:'Google Sans',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase">
+    ⚡ Dashboard de Inscritos de Programas Activos
+  </span>
+</div>
 <div class="site-header">
   <div class="sh-inner">
     <div class="sh-brand">
@@ -163,7 +169,7 @@ body{font-family:'Google Sans','Roboto',Arial,sans-serif;background:var(--bg);co
     </div>
     <div class="sh-center">
       <div class="sh-badge">Dashboard Inscritos</div>
-      <div class="sh-semestre">Semestre AD2026 · Todos los programas</div>
+      <div class="sh-semestre">Semestre AD2026 · Programas Activos</div>
     </div>
     <div class="sh-right">
       <div class="sh-act-lbl">Actualización</div>
@@ -177,12 +183,7 @@ body{font-family:'Google Sans','Roboto',Arial,sans-serif;background:var(--bg);co
 <div class="prog-strip">
   <div class="ps-inner">
     <span class="ps-lbl">Programas activos:</span>
-    <div class="ps-group">
-      <span class="ps-per-tag">P1</span>
-      <div class="ps-chip fl"><div class="ps-dot"></div>Freeland Panel</div>
-    </div>
-    <div class="ps-vsep"></div>
-    <div class="ps-group">
+<div class="ps-group">
       <span class="ps-per-tag">ST1</span>
       <div class="ps-chip fl"><div class="ps-dot"></div>Freeland WS 1</div>
       <div class="ps-chip lit"><div class="ps-dot"></div>Lab Idea Trailing</div>
@@ -219,7 +220,6 @@ body{font-family:'Google Sans','Roboto',Arial,sans-serif;background:var(--bg);co
     <button class="prog-btn lit"        onclick="setProg('labval',this)">🔬 Lab Validation Sprint</button>
     <button class="prog-btn lit"        onclick="setProg('fmbc',this)">🚀 Founder Mode BaseCamp</button>
     <button class="prog-btn lit"        onclick="setProg('fiscal',this)">📊 Lab: Fiscal Fundamentals</button>
-    <button class="prog-btn fl"         onclick="setProg('flp',this)">⚡ Freeland Panel</button>
     <button class="prog-btn fl"         onclick="setProg('flpt',this)">⚡ Freeland Power Talk</button>
     <button class="prog-btn fl"         onclick="setProg('flws1',this)">⚡ Freeland Workshop 1</button>
     <button class="prog-btn fl"         onclick="setProg('flws2',this)">⚡ Freeland Workshop 2</button>
@@ -381,41 +381,10 @@ const DATA =
   flp: {
     nombre: 'Freeland Panel', clase: 'fl',
     periodos: {
-      P1:  {total:177, aceptados:177, campus:[
-          {n:'TEC Campus Monterrey', abr:'MTY', total:24, a:24},
-          {n:'TEC Campus Laguna', abr:'LAG', total:13, a:13},
-          {n:'TEC Campus Ciudad de México', abr:'CCM', total:12, a:12},
-          {n:'TEC Campus Querétaro', abr:'QRO', total:12, a:12},
-          {n:'TEC Campus Estado de México', abr:'CEM', total:12, a:12},
-          {n:'TEC Campus León', abr:'LEO', total:9, a:9},
-          {n:'TEC Campus Guadalajara', abr:'GDL', total:8, a:8},
-          {n:'TEC Campus Santa Fe', abr:'CSF', total:7, a:7},
-          {n:'TEC Campus Aguascalientes', abr:'AGS', total:7, a:7},
-          {n:'TEC Campus Puebla', abr:'PUE', total:4, a:4},
-          {n:'TEC Campus Sonora Norte', abr:'SON', total:2, a:2},
-          {n:'TEC Campus Toluca', abr:'TOL', total:2, a:2},
-          {n:'Prepa TEC León', abr:'PLEO', total:2, a:2},
-          {n:'TEC Campus Ciudad Juárez', abr:'CJZ', total:2, a:2},
-          {n:'TEC Campus San Luis Potosí', abr:'SLP', total:1, a:1},
-          {n:'TEC Campus Cuernavaca', abr:'CVA', total:1, a:1},
-          {n:'Prepa TEC Santa Fe', abr:'PCSF', total:1, a:1},
-          {n:'Prepa TEC Ciudad de México', abr:'PCCM', total:1, a:1},
-          {n:'Prepa TEC Guadalajara', abr:'PGDL', total:1, a:1},
-          {n:'Prepa TEC Tampico', abr:'PTAM', total:1, a:1},
-          {n:'Prepa TEC Puebla', abr:'PPUE', total:1, a:1},
-          {n:'Prepa TEC Saltillo', abr:'PSAL', total:1, a:1},
-          {n:'Prepa TEC Cumbres', abr:'PCUM', total:1, a:1},
-          {n:'Prepa TEC Chihuahua', abr:'PCHI', total:1, a:1},
-          {n:'TEC Campus Sinaloa', abr:'SIN', total:1, a:1},
-          {n:'Prepa TEC Querétaro', abr:'PQRO', total:1, a:1},
-          {n:'Prepa TEC Eugenio Garza Sada', abr:'PEGS', total:1, a:1},
-          {n:'Prepa TEC Estado de México', abr:'PCEM', total:1, a:1},
-          {n:'Posgrado (sin campus registrado)', abr:'POS', total:47, a:47}
-        ]},
-      ST1: null, P2: null, ST2: null, P3: null,
+      P1: null, ST1: null, P2: null, ST2: null, P3: null,
     }
   },
-  flpt: {
+    flpt: {
     nombre: 'Freeland Power Talk', clase: 'fl',
     periodos: {
       P1: null, ST1: null,
@@ -477,7 +446,7 @@ const DATA =
 
 // Definición de qué programas están en cada periodo (para la vista "Todos")
 const PROG_EN_PERIODO = {
-  P1:  ['flp'], // LIT no tiene grupo en P1
+  P1:  [], // Freeland Panel concluido // LIT no tiene grupo en P1
   ST1: ['flws1','lit'],
   P2:  ['flpt','lit','ebc','labval','fmbc'],
   ST2: ['flws2','lit'],
@@ -490,7 +459,6 @@ const PROG_CLASE = {
 };
 
 const PERIODOS = [
-  {id:'P1',  label:'Primer Periodo'},
   {id:'ST1', label:'Semana Tec 1'},
   {id:'P2',  label:'Segundo Periodo'},
   {id:'ST2', label:'Semana Tec 2'},
@@ -579,13 +547,13 @@ function render(){
 
   if(progActivo === 'all'){
     // ── VISTA "TODOS LOS PROGRAMAS" ──
-    document.getElementById('hero-lbl').textContent = 'Todos los programas · ' + perLabel;
+    document.getElementById('hero-lbl').textContent = 'Todos los programas activos · ' + perLabel;
     const {campusArr, tot, ace} = consolidarTodos(perActivo);
     const pct = tot>0 ? Math.round((ace/tot)*100) : 0;
 
     document.getElementById('kn-tot').textContent = tot;
     document.getElementById('kn-ace').textContent = ace;
-    document.getElementById('ks-tot').textContent = 'total acumulado de todos los programas';
+    document.getElementById('ks-tot').textContent = 'total acumulado de todos los programas activos';
     document.getElementById('ks-ace').textContent = tot>0 ? pct+'% del total postulado' : 'sin aceptados aún';
     document.getElementById('kpi-bar-fill').style.width = pct+'%';
 
