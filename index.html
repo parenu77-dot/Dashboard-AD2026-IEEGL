@@ -175,7 +175,7 @@ body{font-family:'Google Sans','Roboto',Arial,sans-serif;background:var(--bg);co
     </div>
     <div class="sh-right">
       <div class="sh-act-lbl">Actualización</div>
-      <div class="sh-act-date">28 Sep 2026</div>
+      <div class="sh-act-date">01 Oct 2026</div>
     </div>
   </div>
   <div class="sh-stripe"></div>
@@ -270,11 +270,8 @@ body{font-family:'Google Sans','Roboto',Arial,sans-serif;background:var(--bg);co
 <script>
 const DATA = 
 {
-  ebc: {
-    nombre: 'Explora BaseCamp', clase: 'ebc',
-    periodos: {
-      P1: null, ST1: null,
-      P2:  {total:140, aceptados:123, campus:[
+  ebc: { nombre: 'Explora BaseCamp', clase: 'ebc',
+    periodos: { P1: null, ST1: null, P2: {total:140, aceptados:123, campus:[
           {n:'TEC Campus Monterrey', abr:'MTY', total:36, a:31},
           {n:'TEC Campus Ciudad de México', abr:'CCM', total:14, a:13},
           {n:'TEC Campus Puebla', abr:'PUE', total:11, a:11},
@@ -294,9 +291,7 @@ const DATA =
           {n:'TEC Campus San Luis Potosí', abr:'SLP', total:1, a:1},
           {n:'Sin especificar', abr:'S/E', total:26, a:21},
           {n:'Posgrado (sin campus registrado)', abr:'POS', total:5, a:4}
-        ]},
-      ST2: null,
-      P3:  {total:17, aceptados:1, campus:[
+        ]}, ST2: null, P3: {total:18, aceptados:1, campus:[
           {n:'TEC Campus Ciudad de México', abr:'CCM', total:5, a:0},
           {n:'TEC Campus Monterrey', abr:'MTY', total:3, a:0},
           {n:'TEC Campus Laguna', abr:'LAG', total:2, a:0},
@@ -305,66 +300,49 @@ const DATA =
           {n:'TEC Campus Toluca', abr:'TOL', total:1, a:0},
           {n:'TEC Campus Estado de México', abr:'CEM', total:1, a:0},
           {n:'TEC Campus Chihuahua', abr:'CHI', total:1, a:0},
+          {n:'TEC Campus León', abr:'LEO', total:1, a:0},
           {n:'Posgrado (sin campus registrado)', abr:'POS', total:1, a:0},
           {n:'Sin especificar', abr:'S/E', total:1, a:0}
-        ]},
-    }
-  },
-  lit: {
-    nombre: 'Lab Idea Trailing', clase: 'lit',
-    periodos: {
-      P1: null, ST1: null,
-      P2:  {total:116, aceptados:67, campus:[
-          {n:'TEC Campus Santa Fe', abr:'CSF', total:22, a:14},
-          {n:'TEC Campus Monterrey', abr:'MTY', total:21, a:16},
-          {n:'TEC Campus Ciudad de México', abr:'CCM', total:9, a:5},
-          {n:'TEC Campus Puebla', abr:'PUE', total:6, a:4},
-          {n:'TEC Campus Querétaro', abr:'QRO', total:6, a:1},
-          {n:'TEC Campus Toluca', abr:'TOL', total:5, a:3},
-          {n:'TEC Campus Guadalajara', abr:'GDL', total:4, a:2},
+        ]} } },
+  lit: { nombre: 'Lab Idea Trailing', clase: 'lit',
+    periodos: { P1: null, ST1: null, P2: {total:125, aceptados:67, campus:[
+          {n:'TEC Campus Santa Fe', abr:'CSF', total:23, a:14},
+          {n:'TEC Campus Monterrey', abr:'MTY', total:22, a:16},
+          {n:'TEC Campus Ciudad de México', abr:'CCM', total:10, a:5},
+          {n:'TEC Campus Puebla', abr:'PUE', total:7, a:4},
+          {n:'TEC Campus Querétaro', abr:'QRO', total:7, a:1},
+          {n:'TEC Campus Toluca', abr:'TOL', total:6, a:3},
+          {n:'TEC Campus Guadalajara', abr:'GDL', total:5, a:2},
           {n:'TEC Campus León', abr:'LEO', total:3, a:0},
           {n:'TEC Campus Laguna', abr:'LAG', total:2, a:0},
+          {n:'TEC Campus Ciudad Juárez', abr:'CJZ', total:2, a:0},
           {n:'TEC Campus Hidalgo', abr:'HGO', total:1, a:1},
           {n:'TEC Campus Ciudad Obregón', abr:'OBR', total:1, a:1},
-          {n:'TEC Campus Ciudad Juárez', abr:'CJZ', total:1, a:0},
           {n:'TEC Campus San Luis Potosí', abr:'SLP', total:1, a:0},
-          {n:'Sin especificar', abr:'S/E', total:26, a:16},
+          {n:'Sin especificar', abr:'S/E', total:27, a:16},
           {n:'Posgrado (sin campus registrado)', abr:'POS', total:8, a:4}
-        ]},
-      ST2: {total:16, aceptados:11, campus:[
+        ]}, ST2: {total:17, aceptados:11, campus:[
           {n:'TEC Campus Puebla', abr:'PUE', total:5, a:4},
           {n:'TEC Campus Ciudad de México', abr:'CCM', total:3, a:2},
           {n:'TEC Campus Monterrey', abr:'MTY', total:3, a:3},
-          {n:'TEC Campus Querétaro', abr:'QRO', total:2, a:1},
+          {n:'TEC Campus Querétaro', abr:'QRO', total:3, a:1},
           {n:'TEC Campus Santa Fe', abr:'CSF', total:1, a:1},
           {n:'TEC Campus Laguna', abr:'LAG', total:1, a:0},
           {n:'Sin especificar', abr:'S/E', total:1, a:0}
-        ]},
-      P3:  {total:14, aceptados:7, campus:[
+        ]}, P3: {total:14, aceptados:7, campus:[
           {n:'TEC Campus Ciudad de México', abr:'CCM', total:3, a:1},
           {n:'TEC Campus San Luis Potosí', abr:'SLP', total:3, a:2},
           {n:'TEC Campus Puebla', abr:'PUE', total:3, a:2},
           {n:'TEC Campus Laguna', abr:'LAG', total:1, a:0},
           {n:'TEC Campus Querétaro', abr:'QRO', total:1, a:0},
           {n:'Sin especificar', abr:'S/E', total:3, a:2}
-        ]},
-    }
-  },
-  labval: {
-    nombre: 'Lab Validation Sprint', clase: 'lit',
-    periodos: {
-      P1: null, ST1: null,
-      P2:  {total:26, aceptados:23, campus:[
-          {n:'TEC Campus Guadalajara', abr:'GDL', total:26, a:23}
-        ]},
-      ST2: null, P3: null,
-    }
-  },
-  fmbc: {
-    nombre: 'Founder Mode BaseCamp', clase: 'lit',
-    periodos: {
-      P1: null, ST1: null,
-      P2:  {total:43, aceptados:34, campus:[
+        ]} } },
+  labval: { nombre: 'Lab Validation Sprint', clase: 'lit',
+    periodos: { P1: null, ST1: null, P2: {total:31, aceptados:29, campus:[
+          {n:'TEC Campus Guadalajara', abr:'GDL', total:31, a:29}
+        ]}, ST2: null, P3: null } },
+  fmbc: { nombre: 'Founder Mode BaseCamp', clase: 'lit',
+    periodos: { P1: null, ST1: null, P2: {total:43, aceptados:34, campus:[
           {n:'TEC Campus Monterrey', abr:'MTY', total:11, a:10},
           {n:'TEC Campus Guadalajara', abr:'GDL', total:5, a:5},
           {n:'TEC Campus Querétaro', abr:'QRO', total:5, a:3},
@@ -377,64 +355,51 @@ const DATA =
           {n:'TEC Campus Estado de México', abr:'CEM', total:1, a:1},
           {n:'TEC Campus Aguascalientes', abr:'AGS', total:1, a:0},
           {n:'Posgrado (sin campus registrado)', abr:'POS', total:5, a:5}
-        ]},
-      ST2: null, P3: null,
-    }
-  },
-  fiscal: {
-    nombre: 'Lab: Fiscal Fundamentals', clase: 'lit',
-    periodos: {
-      P1: null, ST1: null,
-      P2:  {total:44, aceptados:43, campus:[
-          {n:'Sin campus registrado', abr:'S/C', total:44, a:43}
-        ]},
-      ST2: null, P3: null,
-    }
-  },
-  flp: {
-    nombre: 'Freeland Panel', clase: 'fl',
-    periodos: {
-      P1: null, ST1: null, P2: null, ST2: null, P3: null,
-    }
-  },
-  flpt: {
-    nombre: 'Freeland Power Talk', clase: 'fl',
-    periodos: {
-      P1: null, ST1: null,
-      P2:  {total:53, aceptados:53, campus:[
-          {n:'TEC Campus Monterrey', abr:'MTY', total:9, a:9},
-          {n:'TEC Campus Santa Fe', abr:'CSF', total:6, a:6},
+        ]}, ST2: null, P3: null } },
+  fiscal: { nombre: 'Lab: Fiscal Fundamentals', clase: 'lit',
+    periodos: { P1: null, ST1: null, P2: {total:60, aceptados:59, campus:[
+          {n:'TEC Campus Monterrey', abr:'MTY', total:15, a:15},
+          {n:'TEC Campus Querétaro', abr:'QRO', total:9, a:9},
+          {n:'TEC Campus Estado de México', abr:'CEM', total:5, a:5},
+          {n:'TEC Campus Guadalajara', abr:'GDL', total:4, a:4},
           {n:'TEC Campus Ciudad de México', abr:'CCM', total:4, a:4},
-          {n:'TEC Campus Querétaro', abr:'QRO', total:3, a:3},
-          {n:'TEC Campus Puebla', abr:'PUE', total:2, a:2},
+          {n:'TEC Campus Puebla', abr:'PUE', total:4, a:4},
+          {n:'TEC Campus Hidalgo', abr:'HGO', total:3, a:3},
+          {n:'TEC Campus Aguascalientes', abr:'AGS', total:3, a:3},
+          {n:'TEC Campus Toluca', abr:'TOL', total:2, a:2},
+          {n:'TEC Campus Laguna', abr:'LAG', total:2, a:2},
+          {n:'TEC Campus Santa Fe', abr:'CSF', total:1, a:1},
+          {n:'Sin especificar', abr:'S/E', total:5, a:4},
+          {n:'Posgrado (sin campus registrado)', abr:'POS', total:3, a:3}
+        ]}, ST2: null, P3: null } },
+  flp: { nombre: 'Freeland Panel', clase: 'fl',
+    periodos: { P1: null, ST1: null, P2: null, ST2: null, P3: null } },
+  flpt: { nombre: 'Freeland Power Talk', clase: 'fl',
+    periodos: { P1: null, ST1: null, P2: {total:63, aceptados:63, campus:[
+          {n:'TEC Campus Monterrey', abr:'MTY', total:10, a:10},
+          {n:'TEC Campus Santa Fe', abr:'CSF', total:8, a:8},
+          {n:'TEC Campus Ciudad de México', abr:'CCM', total:5, a:5},
+          {n:'TEC Campus Querétaro', abr:'QRO', total:4, a:4},
+          {n:'TEC Campus Puebla', abr:'PUE', total:3, a:3},
           {n:'TEC Campus Laguna', abr:'LAG', total:2, a:2},
           {n:'TEC Campus Estado de México', abr:'CEM', total:2, a:2},
           {n:'Prepa TEC Toluca', abr:'PTOL', total:2, a:2},
           {n:'TEC Campus Toluca', abr:'TOL', total:2, a:2},
+          {n:'TEC Campus Aguascalientes', abr:'AGS', total:2, a:2},
           {n:'TEC Campus León', abr:'LEO', total:2, a:2},
           {n:'Prepa TEC Ciudad de México', abr:'PCCM', total:1, a:1},
           {n:'TEC Campus Chihuahua', abr:'CHI', total:1, a:1},
           {n:'TEC Campus Hidalgo', abr:'HGO', total:1, a:1},
-          {n:'TEC Campus Aguascalientes', abr:'AGS', total:1, a:1},
           {n:'Prepa TEC Estado de México', abr:'PCEM', total:1, a:1},
           {n:'TEC Campus Guadalajara', abr:'GDL', total:1, a:1},
           {n:'Prepa TEC Querétaro', abr:'PQRO', total:1, a:1},
-          {n:'Posgrado (sin campus registrado)', abr:'POS', total:12, a:12}
-        ]},
-      ST2: null, P3: null,
-    }
-  },
-  flws1: {
-    nombre: 'Freeland Workshop 1', clase: 'fl',
-    periodos: {
-      P1: null, ST1: null, P2: null, ST2: null, P3: null,
-    }
-  },
-  flws2: {
-    nombre: 'Freeland Workshop 2', clase: 'fl',
-    periodos: {
-      P1: null, ST1: null, P2: null,
-      ST2: {total:11, aceptados:11, campus:[
+          {n:'TEC Campus Ciudad Obregón', abr:'OBR', total:1, a:1},
+          {n:'Posgrado (sin campus registrado)', abr:'POS', total:14, a:14}
+        ]}, ST2: null, P3: null } },
+  flws1: { nombre: 'Freeland Workshop 1', clase: 'fl',
+    periodos: { P1: null, ST1: null, P2: null, ST2: null, P3: null } },
+  flws2: { nombre: 'Freeland Workshop 2', clase: 'fl',
+    periodos: { P1: null, ST1: null, P2: null, ST2: {total:11, aceptados:11, campus:[
           {n:'TEC Campus Laguna', abr:'LAG', total:5, a:5},
           {n:'TEC Campus Puebla', abr:'PUE', total:1, a:1},
           {n:'TEC Campus Monterrey', abr:'MTY', total:1, a:1},
@@ -442,15 +407,9 @@ const DATA =
           {n:'TEC Campus Ciudad de México', abr:'CCM', total:1, a:1},
           {n:'TEC Campus Estado de México', abr:'CEM', total:1, a:1},
           {n:'TEC Campus Toluca', abr:'TOL', total:1, a:1}
-        ]},
-      P3: null,
-    }
-  },
-  flpro: {
-    nombre: 'Freeland Pro', clase: 'fl',
-    periodos: {
-      P1: null, ST1: null, P2: null, ST2: null,
-      P3:  {total:10, aceptados:10, campus:[
+        ]}, P3: null } },
+  flpro: { nombre: 'Freeland Pro', clase: 'fl',
+    periodos: { P1: null, ST1: null, P2: null, ST2: null, P3: {total:10, aceptados:10, campus:[
           {n:'TEC Campus Monterrey', abr:'MTY', total:2, a:2},
           {n:'TEC Campus Santa Fe', abr:'CSF', total:2, a:2},
           {n:'TEC Campus Estado de México', abr:'CEM', total:2, a:2},
@@ -458,9 +417,7 @@ const DATA =
           {n:'TEC Campus Aguascalientes', abr:'AGS', total:1, a:1},
           {n:'TEC Campus Guadalajara', abr:'GDL', total:1, a:1},
           {n:'Posgrado (sin campus registrado)', abr:'POS', total:1, a:1}
-        ]},
-    }
-  },
+        ]} } },
 }
 
 // Definición de qué programas están en cada periodo (para la vista "Todos")
